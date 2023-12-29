@@ -25,7 +25,7 @@ body {
     justify-content: center;
 }
 
-.hour-hand, .minute-hand, .second-hand {
+.hour-hand, .minute-hand, .second-hand, .hour-text {
     position: absolute;
     background-color: #333;
     transform-origin: 50% 100%;
@@ -44,4 +44,11 @@ body {
 .second-hand {
     width: 2px;
     height: 100px;
+}
+
+.hour-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    z-index: 1; /* 确保数字显示在指针上方 */
 }
