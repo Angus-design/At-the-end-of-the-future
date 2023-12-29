@@ -50,5 +50,5 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     color: #333;
-    z-index: 1; /* 确保数字显示在指针上方 */
+    z-index: 1; /* Ensure the number is displayed above the hands */
 }
