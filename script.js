@@ -12,7 +12,7 @@ function updateClock() {
     document.querySelector('.minute-hand').style.transform = `rotate(${minuteDeg}deg)`;
     document.querySelector('.second-hand').style.transform = `rotate(${secondDeg}deg)`;
 
-    // 更新阿拉伯数字
+    // Update Arabic numerals
     document.querySelector('.hour-text').textContent = hours % 12 || 12;
 }
 
