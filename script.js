@@ -11,6 +11,9 @@ function updateClock() {
     document.querySelector('.hour-hand').style.transform = `rotate(${hourDeg}deg)`;
     document.querySelector('.minute-hand').style.transform = `rotate(${minuteDeg}deg)`;
     document.querySelector('.second-hand').style.transform = `rotate(${secondDeg}deg)`;
+
+    // 更新阿拉伯数字
+    document.querySelector('.hour-text').textContent = hours % 12 || 12;
 }
 
 // Update the clock every second
